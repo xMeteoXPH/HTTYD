@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Train Your Dragon - Our Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="start-screen">
+            <div class="title-container">
+                <h1 class="main-title">
+                    <span class="title-top">HOW TO TRAIN YOUR</span>
+                    <span class="title-dragon">DRAGON</span>
+                </h1>
+                <h2 class="subtitle">Let's Fly</h2>
+            </div>
+            <button id="startBtn" class="start-button">BEGIN ADVENTURE</button>
+            <div class="dragon-silhouette"></div>
+        </div>
+
+        <!-- Main Content (hidden initially) -->
+        <div id="mainContent" class="main-content hidden">
+            <!-- Background Music Control -->
+            <div class="music-control">
+                <button id="musicToggle" class="music-btn">🔊</button>
+            </div>
+
+            <!-- Header -->
+            <header class="header">
+                <h1>Journeys</h1>
+            </header>
+
+            <!-- Interactive Elements -->
+            <section class="interactive-section">
+                <h2>Explore Berk</h2>
+                <div class="interactive-grid">
+                    <div class="interactive-card" data-card="1">
+                        <div class="card-icon">🏔️</div>
+                        <h3>Berk Island</h3>
+                        <p>Click to explore</p>
+                    </div>
+                    <div class="interactive-card" data-card="2">
+                        <div class="card-icon new-berk-icon">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Simple cartoonish mountain base (like emoji style) -->
+                                <path d="M 20 100 L 30 70 L 40 80 L 50 50 L 60 80 L 70 70 L 80 100 Z" fill="#8B9A46" stroke="#6B7A36" stroke-width="1"/>
+                                
+                                <!-- Simple green vegetation layer (cartoonish) -->
+                                <path d="M 25 95 L 32 75 L 42 82 L 50 55 L 58 82 L 68 75 L 75 95 Z" fill="#6B8E3A" stroke="#5A7D2A" stroke-width="0.5"/>
+                                
+                                <!-- Simple cartoonish trees (triangular) -->
+                                <path d="M 32 75 L 30 65 L 34 65 Z" fill="#4A6B2A"/>
+                                <path d="M 48 55 L 46 45 L 50 45 Z" fill="#4A6B2A"/>
+                                <path d="M 68 75 L 66 65 L 70 65 Z" fill="#4A6B2A"/>
+                                
+                                <!-- Simple cartoonish clouds (rounded, simple shapes) -->
+                                <ellipse cx="30" cy="65" rx="10" ry="6" fill="#E8E8E8" opacity="0.8"/>
+                                <ellipse cx="38" cy="67" rx="8" ry="5" fill="#E8E8E8" opacity="0.8"/>
+                                <ellipse cx="50" cy="55" rx="12" ry="8" fill="#E8E8E8" opacity="0.85"/>
+                                <ellipse cx="58" cy="57" rx="10" ry="6" fill="#E8E8E8" opacity="0.8"/>
+                                <ellipse cx="70" cy="65" rx="8" ry="5" fill="#E8E8E8" opacity="0.8"/>
+                                <ellipse cx="62" cy="67" rx="7" ry="4" fill="#E8E8E8" opacity="0.8"/>
+                                
+                                <!-- Additional simple cloud layers -->
+                                <ellipse cx="35" cy="62" rx="6" ry="4" fill="#F0F0F0" opacity="0.7"/>
+                                <ellipse cx="55" cy="52" rx="8" ry="5" fill="#F0F0F0" opacity="0.75"/>
+                                <ellipse cx="65" cy="62" rx="6" ry="4" fill="#F0F0F0" opacity="0.7"/>
+                            </svg>
+                        </div>
+                        <h3>New Berk</h3>
+                        <p>Locked</p>
+                    </div>
+                    <div class="interactive-card" data-card="3">
+                        <div class="card-icon nightlight-icon">
+                            <img src="nightlight.png" alt="Nightlight" class="nightlight-img">
+                        </div>
+                        <h3>Adventures</h3>
+                        <p>Locked</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Berk Island Destination Section (hidden initially) -->
+            <section id="berkDestination" class="destination-section hidden">
+                <button class="back-button" id="backBtn">← Back</button>
+                <div class="destination-header">
+                    <h2>Berk Island</h2>
+                    <p class="destination-subtitle">A Journey Through Our Adventures</p>
+                </div>
+                <div class="photo-gallery-destination">
+                    <div class="photo-item" data-photo="1">
+                        <img src="01.jpg" alt="Adventure 1" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="2">
+                        <img src="02.jpg" alt="Adventure 2" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="3">
+                        <img src="03.jpg" alt="Adventure 3" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="4">
+                        <img src="04.jpg" alt="Adventure 4" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="5">
+                        <img src="05.jpg" alt="Adventure 5" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="6">
+                        <img src="06.jpg" alt="Adventure 6" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="7">
+                        <img src="07.jpg" alt="Adventure 7" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="8">
+                        <img src="08.jpg" alt="Adventure 8" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                    <div class="photo-item" data-photo="9">
+                        <img src="09.jpg" alt="Adventure 9" class="destination-photo">
+                        <div class="cloud-overlay"></div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Toothless Flying Animation -->
+        <div id="toothless" class="toothless hidden">
+            <img src="toothless.png" alt="Toothless" class="toothless-img">
+        </div>
+
+        <!-- Audio Element -->
+        <audio id="backgroundMusic" loop>
+            <source src="Test Driving Toothless.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

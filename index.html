@@ -71,7 +71,7 @@
                             </svg>
                         </div>
                         <h3>New Berk</h3>
-                        <p>Locked</p>
+                        <p>Click to explore</p>
                     </div>
                     <div class="interactive-card" data-card="3">
                         <div class="card-icon nightlight-icon">
@@ -130,12 +130,34 @@
                 </div>
             </section>
 
+            <!-- New Berk Destination Section (hidden initially) -->
+            <section id="newBerkDestination" class="destination-section hidden">
+                <button class="back-button" id="newBerkBackBtn">← Back</button>
+                <div class="destination-header">
+                    <h2>New Berk</h2>
+                </div>
+                <div class="new-berk-content">
+                    <div id="torchGame" class="torch-game">
+                        <div class="torch-fog"></div>
+                        <!-- Torches will be injected here by JavaScript -->
+                    </div>
+                </div>
+            </section>
+
         </div>
 
         <!-- Toothless Flying Animation -->
         <div id="toothless" class="toothless hidden">
             <img src="toothless.png" alt="Toothless" class="toothless-img">
         </div>
+
+        <!-- Lightfury Flying Animation -->
+        <div id="lightfury" class="lightfury hidden">
+            <img src="lightfury.png" alt="Lightfury" class="lightfury-img">
+        </div>
+
+        <!-- New Berk Cutscene Video -->
+        <video id="newBerkVideo" class="cutscene-video" src="newberkcut.mp4"></video>
 
         <!-- Audio Element -->
         <audio id="backgroundMusic" loop>
